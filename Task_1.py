@@ -1,4 +1,4 @@
-user_time = input("Enter duration: ")
+user_time = int(input("Enter duration: "))
 d = user_time // 86400
 h = user_time // 60 // 60 % 24
 m = user_time // 60 % 60
