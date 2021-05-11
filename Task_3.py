@@ -1,5 +1,3 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
 num = input("Введите число от 1 до 20: ")
 s1 = "процент"
 s2 = "процента"
