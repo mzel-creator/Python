@@ -13,3 +13,8 @@ print(isinstance(a, int))
 print(isinstance(b, float))
 print(isinstance(c, int))
 print(isinstance(d, int))
+
+#3
+result = [a, b, c, d]
+for i in result:
+    print(type(i))
