@@ -12,5 +12,4 @@ glossary = {
 }
 def num_translate(word):
     return glossary.get(word)
-
 print(num_translate(input("Введите число от одного до десяти на английском: ")))
