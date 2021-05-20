@@ -6,4 +6,5 @@ def thesaurus(*names):
             res[key] = []
         res[key].append(name)
     return res
+
 print(thesaurus('Иван', 'Мария', 'Петр', 'Илья', 'Михаил', 'Владимир', 'Виталий'))
