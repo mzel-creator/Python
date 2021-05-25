@@ -3,6 +3,7 @@ from requests import get, utils
 
 response = utils.get_unicode_from_response(get("http://www.cbr.ru/scripts/XML_daily.asp"))
 
+
 def currency(code):
     content = response.split("<Valute ID=")
     d, m, y, = content[0].split('"')[-4].split(".")
