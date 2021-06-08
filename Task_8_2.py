@@ -1,3 +1,5 @@
+# v.1
+
 import re
 
 RE_NAME = re.compile(r'([\w\.\+\:\/]+)')
@@ -9,3 +11,14 @@ def parcer_log(str_line):
 with open('nginx_logs.txt', 'r', encoding='utf-8') as f:
     for line in f:
         parcer_log(line)
+
+
+# v.2
+
+import re
+
+check = re.compile(r'^(\b.+\b).*\[(.+)].*\"([A-Z]+) +(/.+?)\s.*?\" (\d+) (\d+) .*$|^$')
+
+with open('nginx_logs.txt', 'r', encoding='utf-8') as f:
+    for line in f:
+        print(re.findall(check, line))
