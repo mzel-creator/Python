@@ -10,7 +10,6 @@ def val_checker(l_func):
 
     return _val_checker
 
-
 @val_checker(lambda x: x > 0)
 def calc_cube(x):
     return x ** 3
