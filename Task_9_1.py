@@ -2,7 +2,7 @@ import time
 import itertools
 
 class TrafficLight:
-    __color = [["red", [2, 31]], ["yellow", [2, 33]], ["green", [2, 32]], ["yellow", [2, 33]]]
+    __color = [["red", [7, 31]], ["yellow", [2, 33]], ["green", [10, 32]], ["yellow", [2, 33]]]
 
     def running(self):
         for light in itertools.cycle(self.__color):
